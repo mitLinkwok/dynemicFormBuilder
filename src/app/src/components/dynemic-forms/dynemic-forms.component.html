@@ -1,0 +1,15 @@
+<div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form" class="dynamic-form">
+    <ng-container
+      *ngFor="let field of fields"
+      dynamicField
+      [field]="field"
+      [group]="form"
+    >
+    </ng-container>
+
+    <ion-button expand="block" (click)="onSubmit($event)" [formGroup]="form"
+      >Block Button</ion-button
+    >
+  </form>
+</div>

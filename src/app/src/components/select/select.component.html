@@ -1,0 +1,16 @@
+<ion-item [formGroup]="group">
+  <ion-label>{{ field.label }}</ion-label>
+  <ion-select
+    (ionChange)="onSelectChange($event, field.dependId)"
+    multiple="field.isMultipal"
+    [formControlName]="field.name"
+  >
+    <ion-select-option
+      *ngFor="let item of field.options"
+      [value]="item"
+      okText="Okay"
+      cancelText="Dismiss"
+      >{{ item.name }}</ion-select-option
+    >
+  </ion-select>
+</ion-item>

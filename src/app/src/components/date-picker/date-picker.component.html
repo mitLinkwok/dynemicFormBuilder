@@ -1,0 +1,8 @@
+<ion-item [formGroup]="group">
+  <ion-label position="floating">MM/DD/YYYY</ion-label>
+  <ion-datetime
+    displayFormat="MM/DD/YYYY"
+    [formControlName]="field.name"
+    [placeholder]="field.label"
+  ></ion-datetime>
+</ion-item>

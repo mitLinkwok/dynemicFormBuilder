@@ -1,0 +1,58 @@
+[
+  {
+    "type": "input",
+    "label": "Username",
+    "inputType": "text",
+    "name": "name",
+    "value": "mit",
+    "id": 1
+  },
+  {
+    "type": "input",
+    "label": "Email Address",
+    "inputType": "email",
+    "name": "email",
+    "value": "mit@gmail.com ",
+    "id": 2
+  },
+  {
+    "type": "input",
+    "label": "Password",
+    "inputType": "password",
+    "name": "password",
+    "id": 3
+  },
+  {
+    "type": "select",
+    "label": "Country",
+    "isMultipal": true,
+    "name": "country",
+
+    "dependId": 5,
+    "options": [
+      { "name": "India", "id": 1 },
+      { "name": "UK", "id": 2 }
+    ],
+    "id": 4
+  },
+  {
+    "type": "select",
+    "label": "States",
+    "name": "states",
+
+    "options": [
+      { "name": "GJ", "id": 1 },
+      { "name": "KA", "id": 2 },
+      { "name": "MH", "id": 3 },
+      { "name": "DH", "id": 3 }
+    ],
+    "id": 5
+  },
+  {
+    "type": "datepicker",
+    "label": "Select Date",
+    "inputType": "date",
+    "name": "Date",
+    "id": 6
+  }
+]
