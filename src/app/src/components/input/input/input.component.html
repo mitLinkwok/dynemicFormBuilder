@@ -1,4 +1,5 @@
 <ion-item class="demo-full-width" [formGroup]="group">
+  <ion-label position="floating">{{ field.label }}</ion-label>
   <ion-input
     [formControlName]="field.name"
     [placeholder]="field.label"

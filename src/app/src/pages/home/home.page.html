@@ -1,5 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-back-button></ion-back-button>
     <ion-title>
       Blank
     </ion-title>
@@ -12,10 +13,9 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-card padding>
-    <app-dynemic-forms
-      [fields]="regConfig "
-      (submit)="submit($event)"
-    ></app-dynemic-forms>
-  </ion-card>
+
+  <app-dynemic-forms
+    [fields]="regConfig "
+    (submit)="submit($event)"
+  ></app-dynemic-forms>
 </ion-content>

@@ -25,13 +25,15 @@
   {
     "type": "select",
     "label": "Country",
-    "isMultipal": true,
+    "isMultipal": false,
     "name": "country",
 
     "dependId": 5,
+    "depend_url": "/states/",
     "options": [
-      { "name": "India", "id": 1 },
-      { "name": "UK", "id": 2 }
+      { "state_name": "India", "id": 1 },
+      { "state_name": "United Kingdom", "id": 2 },
+      { "state_name": "United States", "id": 2 }
     ],
     "id": 4
   },
@@ -39,20 +41,24 @@
     "type": "select",
     "label": "States",
     "name": "states",
-
-    "options": [
-      { "name": "GJ", "id": 1 },
-      { "name": "KA", "id": 2 },
-      { "name": "MH", "id": 3 },
-      { "name": "DH", "id": 3 }
-    ],
+    "depend_url": "/cities/",
+    "dependId": 6,
+    "options": [],
     "id": 5
+  },
+  {
+    "type": "select",
+    "label": "City",
+    "name": "city",
+
+    "options": [],
+    "id": 6
   },
   {
     "type": "datepicker",
     "label": "Select Date",
     "inputType": "date",
     "name": "Date",
-    "id": 6
+    "id": 7
   }
 ]

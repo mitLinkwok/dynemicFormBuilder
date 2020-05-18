@@ -20,6 +20,6 @@ export class HomePage implements OnInit {
   async ngOnInit() {}
 
   submit($event) {
-    console.log($event);
+    alert(JSON.stringify($event));
   }
 }

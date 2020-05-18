@@ -12,6 +12,8 @@ export interface FieldConfig {
   type: string;
   value?: any;
   dependId?: any;
+  depend_url?: any;
+  isMultipal: boolean;
   validations?: Validator[];
   id?: any;
 }

@@ -1,5 +1,5 @@
 <div>
-  <form (ngSubmit)="onSubmit()" [formGroup]="form" class="dynamic-form">
+  <form (ngSubmit)="onSubmit($event)" [formGroup]="form" class="dynamic-form">
     <ng-container
       *ngFor="let field of fields"
       dynamicField
